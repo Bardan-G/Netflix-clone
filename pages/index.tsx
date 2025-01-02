@@ -4,6 +4,7 @@ import {getSession, signOut} from 'next-auth/react'
 import useCurrentUser from '@/hooks/useCurrentUser';
 import { redirect } from 'next/dist/server/api-utils';
 import Navbar from '@/Components/Navbar';
+import Billboard from '@/Components/Billboard';
 
 
 
@@ -19,9 +20,7 @@ export async function getServerSideProps(context: NextPageContext){
     }
   }
   return {
-    props:{
-
-    }
+    props:{}
   }
 }
 export default function Home() {
@@ -29,6 +28,7 @@ export default function Home() {
   return (
     <>
      <Navbar />
+     <Billboard />
     </>
   );
 }
