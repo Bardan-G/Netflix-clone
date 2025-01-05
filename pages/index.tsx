@@ -20,7 +20,7 @@ export async function getServerSideProps(context: NextPageContext){
     }
   }
   return {
-    props:{}
+    props: {}
   }
 }
 export default function Home() {
